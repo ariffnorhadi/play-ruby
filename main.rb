@@ -38,3 +38,8 @@ puts Math.sqrt(56)
 puts Math.log(1)
 # cos sin tan and more
 
+# getting user input
+puts 'Enter your name: '
+name = gets.chomp
+puts "Hello #{name}, you are cool!"
+
