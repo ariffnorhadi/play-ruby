@@ -27,5 +27,14 @@ puts my_name[0, 8]
 puts my_name.index('N')
 puts 'ariffnorhadi'.upcase
 
-
+# Math and numbers
+num = 17.19
+puts "#{num} is my favourite number"
+puts num.abs # absolute number
+puts num.round
+puts num.floor
+puts num.ceil
+puts Math.sqrt(56)
+puts Math.log(1)
+# cos sin tan and more
 
