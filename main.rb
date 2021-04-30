@@ -1,8 +1,10 @@
 # frozen_string_literal: true
-# @!method
+# return statement
 
-def say_hi(name, age, address = 'Johor')
-  puts "Hi #{name}. You are #{age} years old. You live in #{address}"
+def cube(num)
+  [num * num * num, 70]
 end
 
-say_hi('Ariff', 75)
+puts cube(2)[0]
+
+# return, same like java.
