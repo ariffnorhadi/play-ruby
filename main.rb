@@ -3,13 +3,14 @@
 # better calculator
 
 def calculate(num1, operation, num2)
-  if operation.eql? '+'
+  case operation
+  when '+'
     puts num1 + num2
-  elsif operation.eql? '-'
+  when '-'
     puts num1 - num2
-  elsif operation.eql? '*'
+  when '*'
     puts num1 * num2
-  elsif operation.eql? '/'
+  when '/'
     puts num1 / num2
   else
     puts 'Invalid operator'
