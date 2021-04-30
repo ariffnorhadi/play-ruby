@@ -1,22 +1,14 @@
 # frozen_string_literal: true
-# if statements
+# methods and if statements
 
-is_man = true
-is_tall = false
-is_hungry = true
-
-if is_man && is_tall
-  puts 'I am a man and I am tall'
-elsif is_man && !is_tall
-  puts 'I am a man and I am short'
-else
-  puts 'I am not a main'
+def max(num1, num2)
+  if num1.eql? num2
+    puts 'both numbers are same'
+  elsif num1 > num2
+    puts "#{num1} is larger than #{num2}"
+  else
+    puts "#{num2} is larger than #{num1}"
+  end
 end
 
-if is_man && is_hungry
-  puts 'i am a man and i am hungry'
-elsif is_man && !is_hungry
-  puts 'i am a man and i am not hungry'
-else
-  puts 'i am not a man and i do not know what i feel'
-end
+max(3, 8)
