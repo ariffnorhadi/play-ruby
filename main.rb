@@ -1,11 +1,8 @@
 # frozen_string_literal: true
-# hash
+# @!method
 
-states = {
-  "Johor Darul Tazim" => "JDT",
-  "New York" => "NY",
-  "Oregon" => "OR"
-}
+def say_hi(name, age, address = 'Johor')
+  puts "Hi #{name}. You are #{age} years old. You live in #{address}"
+end
 
-puts states
-puts states['Oregon']
+say_hi('Ariff', 75)
