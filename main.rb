@@ -1,14 +1,26 @@
 # frozen_string_literal: true
-# methods and if statements
 
-def max(num1, num2)
-  if num1.eql? num2
-    puts 'both numbers are same'
-  elsif num1 > num2
-    puts "#{num1} is larger than #{num2}"
+# better calculator
+
+def calculate(num1, operation, num2)
+  if operation.eql? '+'
+    puts num1 + num2
+  elsif operation.eql? '-'
+    puts num1 - num2
+  elsif operation.eql? '*'
+    puts num1 * num2
+  elsif operation.eql? '/'
+    puts num1 / num2
   else
-    puts "#{num2} is larger than #{num1}"
+    puts 'Invalid operator'
   end
 end
 
-max(3, 8)
+puts 'Enter first number: '
+num1 = gets.chomp.to_f
+puts 'Enter the operation:'
+operation = gets.chomp.to_s
+puts 'Enter the second number:'
+num2 = gets.chomp.to_f
+
+calculate(num1, operation, num2)
