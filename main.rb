@@ -3,8 +3,11 @@
 # writing files
 
 # a - append, write at the end of the file
-File.open('index.html', 'w') do |file|
-  file.write('<h1>Hello</h1>')
+# w - write
+# r+ - read and write
+File.open('students.txt', 'r+') do |file|
+  file.readlines
+  file.write("\nOscar, Chelsea")
 end
 
 
