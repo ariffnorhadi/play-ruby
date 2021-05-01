@@ -4,10 +4,13 @@
 
 class Book
   attr_accessor :title, :author, :pages
+
+  def initialize(title, author, pages)
+    @author = author
+    @title = title
+    @pages = pages
+  end
 end
 
-book1 = Book.new
-book1.author = 'Ariff Norhadi'
-book1.title = 'Learning Ruby'
-book1.pages = 33
+book1 = Book.new('Learning Ruby', 'Ariff Norhadi', 33)
 puts book1.author
