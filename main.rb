@@ -1,13 +1,18 @@
 # frozen_string_literal: true
 
-# writing files
+# handling errors
 
-# a - append, write at the end of the file
-# w - write
-# r+ - read and write
-File.open('students.txt', 'r+') do |file|
-  file.readlines
-  file.write("\nOscar, Chelsea")
+# num = 10 / 0
+# zero division error
+
+friends = %w[ariff norhadi morsed kadar]
+# friends['nigrat']
+
+begin
+  # num = 10 / 0
+  friends['index']
+rescue ZeroDivisionError
+  puts 'division by zero error'
+rescue TypeError => e
+  puts e
 end
-
-
