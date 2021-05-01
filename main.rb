@@ -1,17 +1,16 @@
 # frozen_string_literal: true
 
-# for loop
+# exponent method
 
-friends = %w[Muhammad Ariff Aizat Aliff Mark]
-friends.each do |friend|
-  puts friend
+def pow(base_num, pow_num)
+  result = 1
+  pow_num.times do |index|
+    result *= base_num
+  end
+  result
 end
 
-# numbers
-(0..5).each do |index|
-  puts index
-end
-puts ''
-6.times do |index|
-  puts index
-end
+puts pow(2, 3)
+
+# each - to go through elements in collection
+# times - decide the number of loop
