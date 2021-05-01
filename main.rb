@@ -1,18 +1,13 @@
 # frozen_string_literal: true
 
-# handling errors
+# classes and objects
 
-# num = 10 / 0
-# zero division error
-
-friends = %w[ariff norhadi morsed kadar]
-# friends['nigrat']
-
-begin
-  # num = 10 / 0
-  friends['index']
-rescue ZeroDivisionError
-  puts 'division by zero error'
-rescue TypeError => e
-  puts e
+class Book
+  attr_accessor :title, :author, :pages
 end
+
+book1 = Book.new
+book1.author = 'Ariff Norhadi'
+book1.title = 'Learning Ruby'
+book1.pages = 33
+puts book1.author
