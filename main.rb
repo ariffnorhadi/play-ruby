@@ -3,6 +3,6 @@
 # for loop
 
 friends = %w[Muhammad Ariff Aizat Aliff Mark]
-for friend in friends
+friends.each do |friend|
   puts friend
 end
