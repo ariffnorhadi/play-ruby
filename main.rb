@@ -1,16 +1,34 @@
 # frozen_string_literal: true
 
-# exponent method
+# reading files
 
-def pow(base_num, pow_num)
-  result = 1
-  pow_num.times do |index|
-    result *= base_num
-  end
-  result
+File.open('students.txt', 'r') do |file|
+  puts file.readline
+  puts file.readline
 end
 
-puts pow(2, 3)
+puts ''
 
-# each - to go through elements in collection
-# times - decide the number of loop
+File.open('students.txt', 'r') do |file|
+  puts file.readchar
+end
+
+puts ''
+
+File.open('students.txt', 'r') do |file|
+  puts file.read
+end
+
+puts ''
+
+File.open('students.txt', 'r') do |file|
+  file.readlines.each do |line|
+    puts line
+  end
+end
+puts ''
+puts 'variable'
+file_ = File.open('students.txt', 'r')
+puts file_.read
+file_.close
+
